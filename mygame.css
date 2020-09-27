@@ -1,0 +1,77 @@
+#gameArea {
+    border:1px solid #d3d3d3;
+    background-color: #f1f1f1;
+    padding: 0;
+    margin: auto;
+    position:fixed;
+
+}
+
+#movemsg{
+   color: blue;
+   display: none;
+}
+
+#move{
+   color: blue;
+   display: none;
+}
+
+#scoremsg{
+   color: blue;
+   display: none;
+}
+
+#score{
+   color: blue;
+   display: none;
+}
+
+#highscoremsg{
+   color: red;
+}
+
+#highscore{
+   color: red;
+}
+
+#distancemsg{
+   color: red;
+}
+
+#distance{
+   color: red;
+}
+
+#panel{
+   position: absolute;
+   top:450px;
+}
+
+#up{
+   font-size: 25px;
+   position: absolute;
+   left: 503px;
+   top: 150px;
+}
+
+#down{
+   font-size: 25px;
+   position: absolute;
+   left: 503px;
+   top: 250px;
+}
+
+#left{
+   font-size: 20px;
+   position: absolute;
+   left: 450px;
+   top: 200px;
+}
+
+#right{
+   font-size: 20px;
+   position: absolute;
+   left: 550px;
+   top: 200px;
+}

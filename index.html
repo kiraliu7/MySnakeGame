@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="./mygame.css"/>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="author" content="Zhengtong Liu">
+<meta name="netid" content="zl92">
+<meta name="email" content="zl92@rice.edu">
+<meta name="gitid" content="kiraliu7">
+<meta name="hw#" content="Assignment3">
+
+</head>
+
+<body onload="setupgame()">
+
+    <div>
+        <canvas id="gameArea" width="420" height="420"></canvas>
+    </div>
+
+    <div id="control">
+        <input type="button" id="up" value="&#8593" onclick="go(1)">
+        <input type="button" id="down" value="&#8595" onclick="go(2)">
+        <input type="button" id="left" value="&#8592" onclick="go(3)">
+        <input type="button" id="right" value="&#8594" onclick="go(4)">
+    </div>
+
+    <div id="panel">
+    <span id="gamestatus"> </span>
+    <br/><br/>
+    <input type="button" id="start" value="Start" onclick="startgame()"> 
+    <input type="button" id="pause" value="Pause" onclick="pausegame()"> 
+    <input type="button" id="reset" value="Reset" onclick="setupgame()"> 
+    <br/><br/>
+
+    <span id="diff"> Select difficulty: </span>
+    <input type="button" id="easy" value="Easy" onclick="changediff(500)"> 
+    <input type="button" id="medium" value="Medium" onclick="changediff(350)"> 
+    <input type="button" id="hard" value="Hard" onclick="changediff(200)"> 
+    <br/><br/>
+    <span id="highscoremsg"> Highest Score: </span>
+    <span id="highscore"> </span> 
+    <span id="distancemsg"> &nbsp &nbsp Total Distance traveled: </span>
+    <span id="distance"> </span> 
+
+    <br/><br/>
+        <span id="movemsg">Distance traveled: </span> 
+        <span id="move"></span> 
+
+    <br/><br/>
+
+        <span id="scoremsg"> Your Score Is: </span> 
+        <span id="score"></span>   
+    </div>
+</body>
+
+</html>
+
+<script src="./mygame.js"> </script>
